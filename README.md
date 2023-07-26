@@ -1,4 +1,4 @@
-## Java and Spring Boot REST API Stack
+## Java and Spring Boot REST API Base Plugin
 
 The **java-springboot-restapi-stack** is a base plugin for bulding REST API applications with Java and Spring Boot following some best practices.
 
