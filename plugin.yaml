@@ -15,6 +15,7 @@ spec:
   implementation: docs/implementation.md
   release-notes: docs/release-notes-0.0.1.md
   requirements: docs/requirements.md
+  repository: https://github.com/rafaelpontezup/java-springboot-restapi-base-plugin
   technologies: # Ref: https://docs.stackspot.com/content-creator/studio/yaml-files/plugin-yaml/#technologies
     - api
     - docker
