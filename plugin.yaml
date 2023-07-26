@@ -5,34 +5,18 @@ metadata:
   display-name: java-springboot-restapi-base
   description: Base plugin for bulding REST API applications with Java and Spring Boot
   version: 0.0.1
-  picture: plugin.png
+  picture: plugin-base.png
 spec:
   type: app
   compatibility:
-    - python
+    - java
+    - spring
   about: docs/about.md
   implementation: docs/implementation.md
   release-notes: docs/release-notes-0.0.1.md
   requirements: docs/requirements.md
   technologies: # Ref: https://docs.stackspot.com/content-creator/studio/yaml-files/plugin-yaml/#technologies
-    - Api
-  inputs:
-    - label: Type name of your resource
-      name: resource
-      type: text
-      required: true
-      default: Client
-      pattern: '([A-Z][a-z]+)+'
-      help: 'Inform your resource name (e.g.: Client)'
-    - label: Choose http method of new endpoint
-      name: method
-      type: text
-      items:
-        - GET
-        - POST
-        - PUT
-        - DELETE
-        - PATCH
-      default: GET
-      required: true
-      help: 'Inform the method of the endpoint (e.g.: post or delete)'
+    - REST API
+    - docker
+    - rest
+    - spring boot
