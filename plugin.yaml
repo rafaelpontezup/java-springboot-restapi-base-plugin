@@ -16,7 +16,7 @@ spec:
   release-notes: docs/release-notes-0.0.1.md
   requirements: docs/requirements.md
   technologies: # Ref: https://docs.stackspot.com/content-creator/studio/yaml-files/plugin-yaml/#technologies
-    - REST API
+    - api
     - docker
     - rest
     - spring boot
