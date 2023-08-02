@@ -1,4 +1,4 @@
-package {{computed_inputs.project_base_package}}.samples.authors;
+package {{project_base_package}}.samples.authors;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;

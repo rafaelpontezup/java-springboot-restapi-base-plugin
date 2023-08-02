@@ -1,4 +1,4 @@
-package {{computed_inputs.project_base_package}}.samples.authors;
+package {{project_base_package}}.samples.authors;
 
 import org.springframework.web.server.ResponseStatusException;
 

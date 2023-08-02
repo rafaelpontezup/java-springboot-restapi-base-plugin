@@ -1,4 +1,4 @@
-package {{computed_inputs.project_base_package}};
+package {{project_base_package}};
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

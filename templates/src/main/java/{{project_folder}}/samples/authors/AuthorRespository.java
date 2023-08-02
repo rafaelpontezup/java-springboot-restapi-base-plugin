@@ -1,4 +1,4 @@
-package {{computed_inputs.project_base_package}}.samples.authors;
+package {{project_base_package}}.samples.authors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

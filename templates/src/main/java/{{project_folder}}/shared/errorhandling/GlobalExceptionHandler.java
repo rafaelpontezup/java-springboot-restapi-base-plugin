@@ -1,4 +1,4 @@
-package {{computed_inputs.project_base_package}}.shared.errorhandling;
+package {{project_base_package}}.shared.errorhandling;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
