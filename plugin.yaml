@@ -1,10 +1,10 @@
-schema-version: v1
+schema-version: v2
 kind: plugin
 metadata:
   name: java-springboot-restapi-base-plugin
   display-name: Java and Spring Boot REST API Base Plugin
   description: Base plugin for bulding REST API applications with Java and Spring Boot
-  version: 0.0.3
+  version: 1.0.0
   picture: plugin-base.png
 spec:
   type: app
