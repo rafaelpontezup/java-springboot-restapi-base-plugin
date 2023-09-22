@@ -25,7 +25,9 @@ spec:
     - label: Project name
       type: text
       name: project_name
+      required: true
       default: springboot-restapi-app
+      help: The project name. For example, "my-project" or "super-app".
     - label: Project description
       type: text
       name: project_description
@@ -34,21 +36,32 @@ spec:
       type: text
       name: project_springboot_version
       default: 2.7.2
+      required: true
+      help: The Spring Boot version. There's no guarantee it works with other newer versions, such as v3.x.
     - label: Project groupId
       type: text
       name: project_group_id
+      required: true
+      default: br.com.zup.edu
+      help: The Maven groupId property. It is your project's base package. For example, "br.com.zup.edu".
     - label: Project artifactId
       type: text
       name: project_artifact_id
+      default: springboot-restapi-app
+      required: true
+      help: The Maven artifactId property. It is the name of the jar without version, and it will also be concatenated with the project group_id.
     - label: Project version
       type: text
       name: project_version
       default: 0.0.1-SNAPSHOT
+      required: true
+      help: The Maven version property.
   computed-inputs:
-    "project_base_package": "{{project_group_id}}.{{project_artifact_id}}"
-    "project_folder": "{{project_base_package | replace('.', '/')}}"
-    "project_name_capitalized": "{{project_name | capitalize}}"
-  # hooks:
-  #   - type: run-script
-  #     trigger: before-input
-  #     script: scripts/regex_replace.py
+    "project_base_package": "{{project_group_id}}.{{project_artifact_id | regex_replace('[^0-9a-zA-Z_]', '')}}"
+    "project_folder": "{{project_base_package | group_id_folder}}"
+    "project_name_capitalized": "{{project_name | to_camel}}"
+  hooks:
+    - type: run
+      trigger: after-render
+      commands:
+        - chmod +x mvnw mvnw.cmd
